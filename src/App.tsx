@@ -1,11 +1,11 @@
 import Header from "./components/Header";
+import Products from "./components/Products";
 
 export default () => {
   return (
-    <main>
+    <div className="main_container">
       <Header></Header>
-      <h1>Hello world</h1>
-      <p>My first react app!</p>
-    </main>
+      <Products></Products>
+    </div>
   );
 };
