@@ -21,8 +21,12 @@ export default () => {
       <div className="header__site-name">Fashion Finds</div>
       <nav className="header__nav">
         <ul className="header__nav__ul">
-          {data.map((listItem) => {
-            return <List href={listItem.href}>{listItem.item}</List>;
+          {data.map((listItem, index) => {
+            return (
+              <List href={listItem.href} key={index}>
+                {listItem.item}
+              </List>
+            );
           })}
         </ul>
       </nav>
