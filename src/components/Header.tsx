@@ -1,18 +1,22 @@
 import List from "./ListItem";
 
-const Header = () => {
+const Header = (props: { added_cart_count: number }) => {
   const data = [
     {
       href: "/not-found",
-      item: "Man",
+      displayName: "Man",
     },
     {
       href: "/not-found",
-      item: "Woman",
+      displayName: "Woman",
     },
     {
       href: "/not-found",
-      item: "Kids",
+      displayName: "Kids",
+    },
+    {
+      href: "/not-found",
+      displayName: "Cart " + props.added_cart_count.toString(),
     },
   ];
 
@@ -24,7 +28,7 @@ const Header = () => {
           {data.map((listItem, index) => {
             return (
               <List href={listItem.href} key={index}>
-                {listItem.item}
+                {listItem.displayName}
               </List>
             );
           })}

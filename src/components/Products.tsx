@@ -1,6 +1,11 @@
+import { MouseEventHandler } from "react";
 import Product from "./Product";
 
-const Products = () => {
+const Products = ({
+  onBuyNowClicked,
+}: {
+  onBuyNowClicked: MouseEventHandler<HTMLButtonElement>;
+}) => {
   const products = [
     {
       image:
@@ -26,8 +31,14 @@ const Products = () => {
     <section className="product_section">
       <h2>Men's Section</h2>
       <div className="products">
-        {products.map(({ name, price, image }) => (
-          <Product key={name} price={price} image={image} />
+        {products.map(({ name, price, image }, index) => (
+          <Product
+            key={index}
+            name={name}
+            price={price}
+            image={image}
+            onBuyNowClicked={onBuyNowClicked}
+          />
         ))}
       </div>
     </section>
