@@ -1,6 +1,6 @@
 import List from "./ListItem";
 
-export default () => {
+const Header = () => {
   const data = [
     {
       href: "/not-found",
@@ -33,3 +33,5 @@ export default () => {
     </header>
   );
 };
+
+export default Header;

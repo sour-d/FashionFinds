@@ -1,4 +1,4 @@
-export default ({
+const Product = ({
   image,
   key: name,
   price,
@@ -24,3 +24,5 @@ export default ({
     </div>
   );
 };
+
+export default Product;

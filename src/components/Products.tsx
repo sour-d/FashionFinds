@@ -1,6 +1,6 @@
 import Product from "./Product";
 
-export default () => {
+const Products = () => {
   const products = [
     {
       image:
@@ -33,3 +33,5 @@ export default () => {
     </section>
   );
 };
+
+export default Products;
