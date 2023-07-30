@@ -41,6 +41,12 @@ const Products = ({
           />
         ))}
       </div>
+      <style jsx>{`
+        .products {
+          display: flex;
+          gap: 20px;
+        }
+      `}</style>
     </section>
   );
 };

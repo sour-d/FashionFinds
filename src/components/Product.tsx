@@ -27,6 +27,48 @@ const Product = ({
           Buy Now
         </button>
       </div>
+      <style jsx>{`
+        .product {
+          width: fit-content;
+          padding: 10px;
+          background-color: white;
+          border-radius: 8px;
+          border: 1px solid #c6c6c6;
+          padding: 20px;
+        }
+        .product:hover {
+          transform: scale(1.02);
+          border: 1px solid black;
+        }
+        .product__info {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          flex-direction: column;
+        }
+        .product__name {
+          margin: 0;
+          font-weight: bold;
+        }
+        .product__price {
+          margin: 0;
+          font-weight: 500;
+        }
+        .product__buy_button {
+          margin-top: 10px;
+          width: 100%;
+          background-color: white;
+          color: black;
+          border: 1px solid #c6c6c6;
+          padding: 10px 0px;
+          text-align: center;
+          border-radius: 5px;
+        }
+        .product__buy_button:hover {
+          cursor: pointer;
+        }
+      `}</style>
     </div>
   );
 };
